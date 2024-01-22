@@ -9,4 +9,9 @@ export default defineNuxtConfig({
     '@formkit/auto-animate',
     '@nuxtjs/tailwindcss',
   ],
+  tailwindcss: {
+    cssPath: ['~/assets/css/tailwind.css', { injectPosition: 'first' }],
+    configPath: 'tailwind.config',
+    viewer: true,
+  }
 })
